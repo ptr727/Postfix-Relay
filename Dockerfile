@@ -1,6 +1,5 @@
-#Dockerfile for a Postfix email relay service
-FROM alpine:3.16
-MAINTAINER Juan Luis Baptiste juan.baptiste@gmail.com
+FROM alpine:latest
+
 
 RUN apk update && \
     apk add bash gawk cyrus-sasl cyrus-sasl-login cyrus-sasl-crammd5 mailx \

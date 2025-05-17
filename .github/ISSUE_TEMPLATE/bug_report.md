@@ -10,9 +10,9 @@ assignees: ''
 <!-- REMOVE START -->
 **Reporting a bug**
 
-First of all, this is **not** a problem reporting forum, only report if you are pretty sure what you are experiencing is a bug with this image, not a configuration issue, for that you can use the [Github discussions section](https://github.com/juanluisbaptiste/docker-postfix/discussions) and we will do our best to help you to figure out what's going on with your setup.
+First of all, this is **not** a problem reporting forum, only report if you are pretty sure what you are experiencing is a bug with this image, not a configuration issue, for that you can use the [Github discussions section](https://github.com/ptr727/docker-postfix/discussions) and we will do our best to help you to figure out what's going on with your setup.
 
-Also be sure you are using the latest image by doing _docker pull juanluisbaptiste/postfix:latest_.
+Also be sure you are using the latest image by doing _docker pull ptr727/postfix:latest_.
 <!-- REMOVE END -->
 
 **Please include the contents of:**
