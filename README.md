@@ -1,6 +1,6 @@
 # Postfix Relay
 
-Simple [Postfix][postfixLink] SMTP TLS relay, docker image based on [alpine linux][alpineLinuxLink], no local authentication, run in a secure LAN.
+Simple [Postfix][postfixLink] SMTP TLS relay, docker image based on [alpine Linux][alpineLinuxLink], no local authentication, only run in a secure LAN.
 
 ## Fork of `juanluisbaptiste/docker-postfix`
 
