@@ -19,7 +19,7 @@ The majority of this project is vanilla github actions and docker hub boilerplat
 ## Build status
 
 [![Docker Status][docker-status-shield]][actions-link]\
-[![Last Commit][last-commit-shield]][commit-link]\
+[![Last Commit][last-commit-shield]][commit-link]
 
 ## Usage
 
