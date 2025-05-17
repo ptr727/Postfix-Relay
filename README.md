@@ -13,6 +13,7 @@ Summary of changes from upstream:
 - Removed `i386` and `arm/v6` build targets.
 - Removed versioned tags, only building using `latest` for `main` branch and `develop` for `develop` branch.
 - Simplified [Dockerfile](./Dockerfile) and [github actions](./.github/workflows/buildpush.yml) to support minimal requirements.
+- Added `dependabot` and auto merging of github actions updates.
 
 The majority of this project is vanilla github actions and docker hub boilerplate, the interesting code is in [`run.sh`](./run.sh) that converts the environment variables into postfix settings.
 
@@ -23,7 +24,19 @@ The majority of this project is vanilla github actions and docker hub boilerplat
 
 ## Usage
 
-Docker images are published on Docker Hub.
+Docker images are published on [Docker Hub](https://hub.docker.com/r/ptr727/postfix-relay) as `ptr727/postfix-relay`.\
+E.g. `docker pull ptr727/postfix-relay:latest`.
+
+Tags:
+
+- `latest` : Latest build from `main` branch.
+- `develop` : Latest build from `develop` branch.
+
+Platforms:
+
+- `linux/amd64`
+- `linux/arm64`
+- `linux/arm/v7`
 
 ### Environment variables
 
