@@ -33,8 +33,6 @@ add_config_value "mydomain" ${DOMAIN}
 add_config_value "mydestination" "${DESTINATION:-localhost}"
 add_config_value "myorigin" '$mydomain'
 add_config_value "relayhost" "[${SMTP_SERVER}]:${SMTP_PORT}"
-add_config_value "smtp_security_level" "may"
-add_config_value "smtpd_tls_auth_only" "yes"
 if [ ! -z "${SMTP_USERNAME}" ]; then
   add_config_value "smtp_sasl_auth_enable" "yes"
   add_config_value "smtp_sasl_password_maps" "lmdb:/etc/postfix/sasl_passwd"
