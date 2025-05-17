@@ -59,11 +59,15 @@ Platforms:
 
 ### Volumes
 
-- `/var/spool/postfix` : (Optional) Mail queue directory, make sure running docker `user` has write permissions.
+- `/var/spool/postfix` : (Optional) Mail queue directory.
 
 ### Network
 
 - `25/tcp` : SMTP relay port.
+
+### Docker user
+
+Postfix wants to run as `root`, e.g. `postfix: fatal: the postfix command is reserved for the superuser`, and requires the container to run as `root`.
 
 ### Docker compose
 
@@ -91,7 +95,7 @@ services:
     hostname: smtp
     domainname: ${DOMAIN_NAME}
     restart: unless-stopped
-    user: ${USER_NONROOT_ID}:${USERS_GROUP_ID}
+    user: root
     environment:
       - TZ=${TZ}
       - SERVER_HOSTNAME=smtp.${DOMAIN_NAME}

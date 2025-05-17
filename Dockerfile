@@ -22,11 +22,7 @@ RUN apk update && \
 
 COPY run.sh /
 RUN chmod +x /run.sh && \
-    newaliases && \
-    chown -R :users /var/spool/postfix && \
-    chown -R :users /etc/postfix && \
-    chmod -R ug=rwx,o=rx,g+s /var/spool/postfix && \
-    chmod -R ug=rwx,o=rx,g+s /etc/postfix
+    newaliases
 
 EXPOSE 25/tcp
 VOLUME ["/var/spool/postfix"]
