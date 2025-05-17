@@ -126,7 +126,7 @@ docker run -d --name postfix -p "25:25" \
     ptr727/postfix-relay
 ```
 
-[docker-status-shield]: https://img.shields.io/github/actions/workflow/status/ptr727/postfix-relay/release.yml?logo=github&label=Docker%20Build
+[docker-status-shield]: https://img.shields.io/github/actions/workflow/status/ptr727/postfix-relay/buildpush.yml?logo=github&label=Docker%20Build
 [last-commit-shield]: https://img.shields.io/github/last-commit/ptr727/postfix-relay?logo=github&label=Last%20Commit
 [commit-link]: https://github.com/ptr727/postfix-relay/commits/main
 [actions-link]: https://github.com/ptr727/postfix-relay/actions
