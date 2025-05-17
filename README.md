@@ -14,6 +14,7 @@ Summary of changes from upstream:
 - Removed versioned tags, only building using `latest` for `main` branch and `develop` for `develop` branch.
 - Simplified [Dockerfile](./Dockerfile) and [github actions](./.github/workflows/buildpush.yml) to support minimal requirements.
 - Added `dependabot` and auto merging of github actions updates.
+- Updated obsolete TLS parameters.
 
 The majority of this project is vanilla github actions and docker hub boilerplate, the interesting code is in [`run.sh`](./run.sh) that converts the environment variables into postfix settings.
 
