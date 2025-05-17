@@ -26,10 +26,6 @@ SMTP_PORT="${SMTP_PORT:-587}"
 #Get the domain from the server host name
 DOMAIN=`echo ${SERVER_HOSTNAME} | awk 'BEGIN{FS=OFS="."}{print $(NF-1),$NF}'`
 
-# TODO: Copy default config file if it does not exist
-# Make sure config file exists
-touch /etc/postfix/main.cf
-
 # Set needed config options
 add_config_value "maillog_file" "/dev/stdout"
 add_config_value "myhostname" ${SERVER_HOSTNAME}

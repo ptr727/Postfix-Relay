@@ -1,7 +1,0 @@
-version: '2'
-services:
-  postfix:
-    image: ptr727/postfix:dev
-    build:
-      context: .
-      dockerfile: Dockerfile
